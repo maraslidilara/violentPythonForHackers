@@ -2,7 +2,9 @@
 # -*- coding: utf-8 -*-
 import crypt
 
-
+'''Function, testPass(), takes the encrypted password as a parameter and
+returns either after finding the password or exhausting the words in the
+dictionary'''
 def testPass(cryptPass):
     salt = cryptPass[0:2]
     dictFile = open('dictionary.txt', 'r')
